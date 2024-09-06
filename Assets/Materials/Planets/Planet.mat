@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Venus
+  m_Name: Planet
   m_Shader: {fileID: 4800000, guid: a16e0f2494fb912418758c0b93a8579a, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -95,9 +95,9 @@ Material:
     - Vector1_26F4CBEB: 30
     - Vector1_7C536670: -1
     - Vector1_95DB6318: 0.02
-    - Vector1_B49E724D: 677
-    - Vector1_B49E724D_1: 563
-    - Vector1_BBB27F28: 0.1
+    - Vector1_B49E724D: 635.79
+    - Vector1_B49E724D_1: 47.518448
+    - Vector1_BBB27F28: 0.04
     - Vector1_C025754: 0.384
     - _AlphaClip: 0
     - _Blend: 0
@@ -114,7 +114,7 @@ Material:
     - _Parallax: 0.02
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SecondValue: -0.25
+    - _SecondValue: -0.04
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -126,11 +126,11 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_38868272: {r: 2, g: 0.54310346, b: 0, a: 1}
-    - Color_38CAF3C8: {r: 1, g: 0.9221478, b: 0.3726415, a: 1}
+    - Color_38CAF3C8: {r: 0.5507074, g: 0.8805151, b: 0.8894644, a: 1}
     - Color_3E685084: {r: 0.27799946, g: 0.66469234, b: 0.9989132, a: 1}
     - Color_5F7BDF02: {r: 0.09656461, g: 0.6603774, b: 0.1758817, a: 0.7764706}
     - _Color: {r: 0.28773582, g: 1, b: 0.8309399, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _SecondColor: {r: 1, g: 0.9891665, b: 0.10849059, a: 0}
+    - _SecondColor: {r: 0.84258425, g: 0.98960304, b: 0.79201853, a: 1}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []

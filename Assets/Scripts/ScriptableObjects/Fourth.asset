@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8f2bcbed54d444b9df99aca5e6b9713, type: 3}
-  m_Name: Third
+  m_Name: Fourth
   m_EditorClassIdentifier: 
-  surfaceGravity: 1
-  radius: 20
-  speed: {x: 0, y: 0, z: 73.3}
-  offset: 2614
+  surfaceGravity: 3
+  radius: 60
+  speed: {x: 0, y: 0, z: 43.5}
+  offset: 7220

@@ -23,9 +23,9 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 0
+  m_AmbientIntensity: 4.28
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
+  m_SubtractiveShadowColor: {r: 1, g: 1, b: 1, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 89005d355c9afa94f9d7178deb9ff558, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -316,7 +316,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 5, y: 5}
+  m_SizeDelta: {x: 2.5, y: 2.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &348627861
 MonoBehaviour:
@@ -542,7 +542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa6ef2fcb7f6148cf8a53f5168954df9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numSteps: 139
+  numSteps: 752
   timeStep: 4.5
   usePhysicsTimeStep: 0
   relativeToBody: 1
@@ -710,12 +710,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _laserForce: 125
   _laserFireRate: 0.2
-  _speed: 2.5
+  _speed: 10
   _rotatingSpeed: 6
   _rollingSpeed: 0
   _laserBeamRange: 500
   _laserBeamFireRate: 5
-  _timeToOverheat: 2
+  _timeToOverheat: 3
   _coolDownRate: 0.1
   _rb: {fileID: 1051320227}
   _transformCamera: {fileID: 330585546}
@@ -1503,11 +1503,15 @@ MonoBehaviour:
   templatePlanets:
   - {fileID: 321909355451866104, guid: 0d13a40545388134695077200adf08ee, type: 3}
   - {fileID: 5388879692032730182, guid: 54073ea83983ab94eb4937b24abc1c59, type: 3}
+  - {fileID: 42603236773660508, guid: b670ff6e7990ead44a8bcbd91a28dd02, type: 3}
   - {fileID: 265576027667686639, guid: 890498055988f134cb4acc7cd534006e, type: 3}
+  - {fileID: 5041005896811186211, guid: 6ab6829211ff5a74b854709f043b594e, type: 3}
   planets:
   - {fileID: 11400000, guid: c7ea4b7ddbe574d489cc8bd9920d9e1a, type: 2}
   - {fileID: 11400000, guid: 52d260fe76b8db448841124ee1ece798, type: 2}
+  - {fileID: 11400000, guid: 851057e70ed7ff047a727e8b40d3e763, type: 2}
   - {fileID: 11400000, guid: e8b05130999e82f4b8fe423640a5b086, type: 2}
+  - {fileID: 11400000, guid: 6898dc7840f384246ae6db15301d4ab3, type: 2}
   _orbitDebugDisplay: {fileID: 750088578}
 --- !u!1 &1869621488
 GameObject:

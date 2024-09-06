@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1611944063518493110}
   - component: {fileID: 7564466253769435308}
   - component: {fileID: 2544943069691938201}
+  - component: {fileID: -6019623862701783541}
   m_Layer: 0
   m_Name: Mars
   m_TagString: Untagged
@@ -47,7 +48,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 265576027667686639}
   serializedVersion: 4
-  m_Mass: 600000
+  m_Mass: 108000000
   m_Drag: 0
   m_AngularDrag: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -80,7 +81,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 60
   surfaceGravity: 3
-  initialVelocity: {x: 0, y: 0, z: 52.2}
+  initialVelocity: {x: 0, y: 0, z: 44.8}
   bodyName: Mars
 --- !u!114 &8332212790078409531
 MonoBehaviour:
@@ -144,7 +145,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 47893725f4c59ae40838c22efcbd3848, type: 2}
+  - {fileID: 2100000, guid: e27bc9b3ec7fb604aa4ebdbc3d35aa55, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2671,6 +2672,19 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &-6019623862701783541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265576027667686639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f30a7cb4829efe347843020b860d4260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sharedMaterial: {fileID: 0}
 --- !u!1 &4745349800233058335
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,7 +2746,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 029339eed304faa49859643ddbe13a55, type: 2}
+  - {fileID: 2100000, guid: 5144dd7ae541dad4fa7c22edcef5ffcc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

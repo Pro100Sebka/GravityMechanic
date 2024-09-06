@@ -9,9 +9,11 @@ public class Laser : MonoBehaviour
     [SerializeField] private int _damage,_timeToDelete;
     [SerializeField] private AudioSource _impactSource;
     private Rigidbody _rb;
+    private NBodySimulation _nBodySimulation;
 
     private void Awake()
     {
+        _nBodySimulation = FindObjectOfType<NBodySimulation>();
         _rb = GetComponent<Rigidbody>();
         StartCoroutine(DeleteAfterTime(_timeToDelete));
     }
@@ -34,7 +36,8 @@ public class Laser : MonoBehaviour
     
     private void FixedUpdate()
     {
-        Vector3 gravity = NBodySimulation.CalculateAcceleration(_rb.position);
+        Vector3 gravity = 
+            _nBodySimulation.CalculateAcceleration(_rb.position);
         _rb.AddForce(gravity, ForceMode.Acceleration);
     }
 

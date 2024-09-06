@@ -28,6 +28,7 @@ public class OrbitDebugDisplay : MonoBehaviour {
 
     void DrawOrbits () {
         CelestialBody[] bodies = FindObjectsOfType<CelestialBody> ();
+        if(bodies.Length ==0) return;
         var virtualBodies = new VirtualBody[bodies.Length];
         var drawPoints = new Vector3[bodies.Length][];
         int referenceFrameIndex = 0;

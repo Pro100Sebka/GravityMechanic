@@ -30,10 +30,12 @@ public class SpaceShip : MonoBehaviour
     private bool _overheated = false;
     private LineRenderer _lineRenderer;
     private float overheat;
+    private NBodySimulation _nBodySimulation;
 
     private void Start()
     {
         _lineRenderer = GetComponentInChildren<LineRenderer>();
+        _nBodySimulation = FindObjectOfType<NBodySimulation>();
         overheat = 0f;
         UpdateOverheatUI();
     }
@@ -63,7 +65,7 @@ public class SpaceShip : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Vector3 gravity = NBodySimulation.CalculateAcceleration(_rb.position);
+        Vector3 gravity = _nBodySimulation.CalculateAcceleration(_rb.position);
         _rb.AddForce(gravity, ForceMode.Acceleration);
     }
 
@@ -78,6 +80,8 @@ public class SpaceShip : MonoBehaviour
         overheat += 0.1f;
         Instantiate(_muzleParticle, _duloTransform.position, transform.rotation, transform);
         GameObject laser = Instantiate(_laserPrefab, _duloTransform.position, _duloTransform.rotation);
+        Rigidbody laserRb = laser.GetComponent<Rigidbody>();
+        laserRb.velocity = _rb.velocity;
         Laser laserScript = laser.GetComponent<Laser>();
         if (laserScript) { laserScript.Fire(_duloTransform, _laserForce); _laserAudioSource.Play(); }
         UpdateOverheatUI();

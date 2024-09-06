@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+    private NBodySimulation _nBodySimulation; 
+        
     public float _localHealth;
     private float _destroyenes = 0;
     private float _destroyenesAtmosphere;
@@ -18,7 +20,13 @@ public class Health : MonoBehaviour
     [Header("Time To Destroy Works Only With Using Animation")]
     [SerializeField] private bool _usingAnimation;
     [SerializeField] private float _timeToDestroy;
-    
+
+
+    private void Awake()
+    {
+        _nBodySimulation = FindObjectOfType<NBodySimulation>();
+    }
+
     public void Damage(float damage)
     {
         _localHealth -= damage;
@@ -31,7 +39,7 @@ public class Health : MonoBehaviour
             if (_usingAnimation) StartCoroutine(Animate());
             else
             {
-                NBodySimulation.Bodies.Remove(GetComponent<CelestialBody>());
+                _nBodySimulation.bodies.Remove(GetComponent<CelestialBody>());
                 Destroy(gameObject);
             }
         }
@@ -54,7 +62,7 @@ public class Health : MonoBehaviour
             currentTime += Time.deltaTime;
             yield return null;
         }
-        NBodySimulation.Bodies.Remove(GetComponent<CelestialBody>());
+        _nBodySimulation.bodies.Remove(GetComponent<CelestialBody>());
         Destroy(gameObject);
     }
 }
